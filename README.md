@@ -1,7 +1,7 @@
 # DoubleCommanderColorScheme
 Double Commander 0.0.7 Color Scheme (tested with MacOSX)
 
-![alt tag](http://url/to/img.png)
+![alt tag](https://raw.githubusercontent.com/andriitishchenko/DoubleCommanderColorScheme/master/scrn.png)
 
 # How To
 
