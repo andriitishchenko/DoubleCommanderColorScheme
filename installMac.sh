@@ -39,3 +39,5 @@ for f in $thispath* ; do
 done
 
 echo "Done"
+
+open "/Applications/Double Commander.app" 2>/dev/null
