@@ -1,5 +1,5 @@
 # Double Commander Color Scheme
-Double Commander 0.0.7 Color Scheme (tested with MacOSX)
+Double Commander 0.0.7 Theme Manager (tested with MacOSX)
 
 ![alt tag](https://raw.githubusercontent.com/andriitishchenko/DoubleCommanderColorScheme/master/scrn.png)
 
