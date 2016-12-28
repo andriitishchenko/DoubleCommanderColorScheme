@@ -24,6 +24,8 @@ if [ -z "$HOME" ]; then
     exit
 fi
 
+pkill -9 "doublecmd"
+
 destpath="$HOME/Library/Preferences/doublecmd/"
 thispath="$(pwd)/doublecmd/"
 
