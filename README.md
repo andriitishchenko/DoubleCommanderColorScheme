@@ -3,6 +3,8 @@ Double Commander 0.0.7 Color Scheme (tested with MacOSX)
 
 ![alt tag](https://raw.githubusercontent.com/andriitishchenko/DoubleCommanderColorScheme/master/scrn.png)
 
+Please note, real data may differ from the screenshot as I can change it for personal reason, phase of moon or what ever.  
+
 # How To
 
 1. Fork
