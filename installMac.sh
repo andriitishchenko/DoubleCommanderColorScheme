@@ -28,5 +28,12 @@ destpath="$HOME/Library/Preferences/doublecmd/"
 thispath="$(pwd)/doublecmd/"
 
 echo "Creating links ..."
-ln -sf "$thispath/*.*" $destpath
+##ln -sf "$thispath/*.*" $destpath
+
+for f in $thispath* ; do 
+ 	filename=$(basename "$f")
+ 	echo "$f - > $destpath$filename"
+	ln -sf $f $destpath$filename
+done
+
 echo "Done"
