@@ -515,7 +515,7 @@
     <StatusBar>True</StatusBar>
     <CmdLine>True</CmdLine>
     <LogWindow>False</LogWindow>
-    <TermWindow>True</TermWindow>
+    <TermWindow>False</TermWindow>
     <KeyButtons>True</KeyButtons>
     <InterfaceFlat>True</InterfaceFlat>
     <DriveFreeSpace>True</DriveFreeSpace>

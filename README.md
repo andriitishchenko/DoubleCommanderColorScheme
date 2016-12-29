@@ -9,9 +9,16 @@ Please note, real data may differ from the screenshot as I can change it for som
 
 1. Fork
 2. clone
-3. run installMac.sh
+3. run ./manager.sh
+
+# Addons
+ 
+1. installMac.sh 
+this is first version of script what create links to doublecmd with light theme. Used mostly for debug :) 
 
 # TODO
 
-1. Make Themes directory and separate files with images to each own folder.
-2. update install script for other OS.
+1. update install script for other OS.
+2. create themes repository.
+3. modify script what allow download themes directly as TAR from different sources.
+

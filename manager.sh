@@ -1,4 +1,5 @@
 #!/bin/bash
+FORCEACTION=0
 echo -e "\n\n"
 if [[ "$OSTYPE" != "darwin"* ]]; then
 	echo "This script works for MAC OSx only!"
@@ -6,26 +7,106 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
 	exit 1
 fi
 
+if [ -z "$HOME" ]; then
+    echo "Cannot define user home directory in $HOME"
+    exit
+fi
+
+DBLSETTINGS="$HOME/Library/Preferences/doublecmd"
+THISPATH="$(pwd)"
+THEMEROOT="$(pwd)/Themes"
+
+confirm() {
+    select result in Yes No
+    do
+        echo $result
+        if [[ $result != "Yes" ]]; then
+            echo -e "BYE!\n" 1>&2; exit 1;
+        fi
+        break;
+    done
+}
 
 
+usage() { 
+        echo "Nothing to do."
+        echo -e "Usage $0 [themename]
+        -             [-l  list]
+        -             [-c  <name> create new theme] 
+        -             [-f -c <name> replase existing theme]
+        \n\n" 1>&2; exit 1;
+}
 
+backup() {
+    if [ -f "$DBLSETTINGS/backup.tar.gz" ] ; then
+        return
+    fi
+    echo "Create backup ..."
+    cd $DBLSETTINGS
+    tar -C $DBLSETTINGS  -cvjf "backup.tar.gz" --exclude="backup.tar.gz" ./
+    cd $THISPATH
+    echo "... done"
+}
 
+restore() {
+    echo "Restore backup ..."
+    tar -xvf "$DBLSETTINGS/backup.tar.gz"
+    echo "... done"
+}
 
+createtheme() {
+    echo "Creating theme: \"$1\"..."
+    themeselect=$1
 
+    if [ -z "${themeselect}" ] ; then
+        usage
+    fi
 
-usage() { echo "Usage: $0 [-s <45|90>] [-p <string>]" 1>&2; exit 1; }
+    THEMEAPPLY="$THEMEROOT/$themeselect"
 
-while getopts ":s:p:" o; do
+    if [ -d "$THEMEAPPLY" ] && [ $FORCEACTION == 0 ] ; then
+        echo "Theme exist, use new Theme name"  1>&2; exit 1;
+    fi
+    DCONFIG=$THEMEAPPLY/config
+    mkdir -p $DCONFIG
+    files=( doublecmd.xml extassoc.xml highlighters.xml multiarc.ini pixmaps.txt shortcuts.scf )
+    for i in "${files[@]}"
+    do
+        cp $DBLSETTINGS/$i $DCONFIG/
+    done
+    echo "... done"
+
+    echo -e "Prepare \"Double Commander\" window size for capturing screenshot.
+    Make sure there is no secure info displayed :)"
+    read -rsp $'Press any key to continue...\n' -n1 key
+
+    echo "Select \"Double Commander\" window to make a screenshot for \"$1\" theme on the next step"
+    read -rsp $'Press any key to continue...\n' -n1 key
+    
+    open "/Applications/Double Commander.app" 2>/dev/null
+    screencapture -W  "$THEMEAPPLY/$themeselect.png"
+    echo "Finish"
+}
+
+#while getopts ":s:p:l:r" o; do
+while getopts ":l:r:c:f" o; do
     case "${o}" in
-        s)
-            s=${OPTARG}
-            ((s == 45 || s == 90)) || usage
+        f)
+            FORCEACTION=1
             ;;
-        p)
-            p=${OPTARG}
+        c)
+            createtheme ${OPTARG}
+            exit
+            ;;
+        r)
+            restore
+            exit
             ;;
         l)
-            ls ./Themes
+            echo "Available Themes:"
+            ls -1 ./Themes
+            echo ""
+            exit
             ;;
         *)
             usage
@@ -34,88 +115,30 @@ while getopts ":s:p:" o; do
 done
 shift $((OPTIND-1))
 
-if [ -z "${s}" ] || [ -z "${p}" ]; then
+# read theme
+themeselect=${1}
+
+if [ -z "${themeselect}" ] ; then
     usage
 fi
 
-echo "s = ${s}"
-echo "p = ${p}"
+THEMEAPPLY="$THEMEROOT/$themeselect"
 
-
-
-
-exit
-
-
-
-
-if [ $# -eq 0 ]; then
-    echo "Nothing to do."
-    echo -e "Usage $0 <themename>\n\n"
-    exit
+if [ ! -d "$THEMEAPPLY" ] ; then
+    usage
 fi
 
-
-if [ -z "$HOME" ]; then
-    echo "Cannot define user home directory in $HOME"
-    exit
-fi
+echo -e "The original config files of Double Commander will be replased with files from \"${themeselect}\" Theme.
+Shortcuts and all other settings will be overwritten.
+Do you want to continue?"
+confirm
 
 pkill -9 "doublecmd"
 
-destpath="$HOME/Library/Preferences/doublecmd"
-thispath="$(pwd)"
+backup
 
-echo "Create backup ..."
-cd $destpath
-tar -C $destpath  -cvjf "backup.tar.gz" --exclude="backup.tar.gz" ./
-cd $thispath
+echo "Moving files ..."
+    cp -L $THEMEAPPLY/config/* $DBLSETTINGS
 echo "... done"
-#unpack
-# tar -xvf backup.tar.gz
-# tar -xvf backup.tar.gz -C pathToUnpack
-
-
-exit
-
-
-
-
-
-
-echo "Assume that you forked this to your GIT account and probably will wish to edit some configs."
-echo "This script will link config files from this folder to Double Commander so you can edit and share it."
-echo "Default path: ~/Library/Preferences/doublecmd/"
-echo "Do you wish to continue?"
-select result in Yes No
-do
-    echo $result
-    if [[ $result == "No" ]]; then
-    	echo "BYE!"
-    	exit
-    fi
-    break;
-done
-
-if [ -z "$HOME" ]; then
-	echo "Cannot define user home directory in $HOME"
-    exit
-fi
-
-pkill -9 "doublecmd"
-
-destpath="$HOME/Library/Preferences/doublecmd/"
-thispath="$(pwd)/doublecmd/"
-
-echo "Creating links ..."
-##ln -sf "$thispath/*.*" $destpath
-
-for f in $thispath* ; do 
- 	filename=$(basename "$f")
- 	echo "$f - > $destpath$filename"
-	ln -sf $f $destpath$filename
-done
-
-echo "Done"
 
 open "/Applications/Double Commander.app" 2>/dev/null

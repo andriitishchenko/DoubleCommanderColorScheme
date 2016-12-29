@@ -12,7 +12,7 @@ echo "Do you wish to continue?"
 select result in Yes No
 do
     echo $result
-    if [[ $result == "No" ]]; then
+    if [[ $result != "Yes" ]]; then
     	echo "BYE!"
     	exit
     fi
