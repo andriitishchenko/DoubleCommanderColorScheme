@@ -41,7 +41,8 @@ backup() {
     if [ -f "$DBLSETTINGS/backup.tar.gz" ] ; then
         return
     fi
-    echo "Create backup ..."
+    echo "Creating backup ..."
+    echo "Backup creates only once with Your original files."
     cd $DBLSETTINGS
     tar -C $DBLSETTINGS  -cvjf "backup.tar.gz" --exclude="backup.tar.gz" ./
     cd $THISPATH
