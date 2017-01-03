@@ -40,6 +40,12 @@
   <Colors>
     <FileFilters>
       <Filter>
+        <Name>Hidden</Name>
+        <FileMasks>*.DS_Store</FileMasks>
+        <Color>6566679</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
         <Name>Pascal sources</Name>
         <FileMasks>*.pas;*.pp</FileMasks>
         <Color>32768</Color>
@@ -54,25 +60,31 @@
       <Filter>
         <Name>Specified Executables</Name>
         <FileMasks>*</FileMasks>
-        <Color>1644825</Color>
+        <Color>13808168</Color>
         <Attributes>-rwxrwxr*x</Attributes>
       </Filter>
       <Filter>
         <Name>Executables</Name>
         <FileMasks>*</FileMasks>
-        <Color>32768</Color>
+        <Color>1103648</Color>
         <Attributes>-*x*</Attributes>
+      </Filter>
+      <Filter>
+        <Name>Files default</Name>
+        <FileMasks>*</FileMasks>
+        <Color>13808168</Color>
+        <Attributes/>
       </Filter>
     </FileFilters>
     <UseCursorBorder>False</UseCursorBorder>
     <CursorBorderColor>-2147483635</CursorBorderColor>
     <UseFrameCursor>False</UseFrameCursor>
-    <Foreground>-2147483640</Foreground>
-    <Background>-2147483647</Background>
-    <Background2>15793151</Background2>
-    <Cursor>-2147483635</Cursor>
-    <CursorText>-2147483634</CursorText>
-    <Mark>255</Mark>
+    <Foreground>16777215</Foreground>
+    <Background>7012352</Background>
+    <Background2>7012352</Background2>
+    <Cursor>6711309</Cursor>
+    <CursorText>16777215</CursorText>
+    <Mark>2093538</Mark>
     <InactiveCursor>-2147483645</InactiveCursor>
     <InactiveMark>128</InactiveMark>
     <UseInvertedSelection>False</UseInvertedSelection>
@@ -224,7 +236,7 @@
                   <Path Filename="ga_chromium_55_0_2883_98">/Sources/work/depot/dev/gd-gfe/desktop/</Path>
                   <Path Filename="main">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/</Path>
                   <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
-                  <Path Filename="headless">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="makechrome.sh">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -273,7 +285,24 @@
                   <Path Filename="mainicon">/Applications/Double Commander.app/Contents/MacOS/pixmaps/</Path>
                   <Path Filename="..">/Applications/Double Commander.app/Contents/MacOS/pixmaps/mainicon/</Path>
                   <Path Filename="..">/Applications/Double Commander.app/Contents/MacOS/pixmaps/</Path>
-                  <Path Filename="">/Applications/Double Commander.app/Contents/MacOS/</Path>
+                  <Path Filename="..">/Applications/Double Commander.app/Contents/MacOS/</Path>
+                  <Path Filename="..">/Applications/Double Commander.app/Contents/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="pixmaps.txt">/Volumes/Double Commander/Double Commander.app/Contents/MacOS/</Path>
+                  <Path Filename="..">/Volumes/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -304,15 +333,20 @@
                   <Path Filename="ga_chromium_55_0_2883_98">/Sources/work/depot/dev/gd-gfe/desktop/</Path>
                   <Path Filename="main">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/</Path>
                   <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
-                  <Path Filename="">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
-                  <Path Filename="Debug">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/</Path>
-                  <Path Filename="Blackberry Access.app">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/</Path>
-                  <Path Filename="Contents">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/</Path>
-                  <Path Filename="Resources">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/</Path>
-                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/Resources/</Path>
-                  <Path Filename="MacOS">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/</Path>
-                  <Path Filename="Blackberry Access">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/MacOS/</Path>
-                  <Path Filename="">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/</Path>
+                  <Path Filename="headless">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="config">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/</Path>
+                  <Path Filename="BUILD.gn">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/config/</Path>
+                  <Path Filename="config">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/</Path>
+                  <Path Filename="third_party">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="blackberry">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/</Path>
+                  <Path Filename="sdk">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/</Path>
+                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/sdk/</Path>
+                  <Path Filename="mac">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/</Path>
+                  <Path Filename="GD_OSX.framework">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/mac/</Path>
+                  <Path Filename="Versions">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/mac/GD_OSX.framework/</Path>
+                  <Path Filename="Current">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/mac/GD_OSX.framework/Versions/</Path>
+                  <Path Filename="Resources">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/mac/GD_OSX.framework/Versions/Current/</Path>
+                  <Path Filename="">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/third_party/blackberry/mac/GD_OSX.framework/Versions/Current/Resources/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -328,7 +362,56 @@
                 <FileSource Type="FileSystem"/>
                 <Paths>
                   <Path Filename="pixmaps.txt">/Volumes/Double Commander/Double Commander.app/Contents/MacOS/</Path>
-                  <Path Filename="">/Volumes/</Path>
+                  <Path Filename="..">/Volumes/</Path>
+                  <Path Filename="..">/Users/atishch/</Path>
+                  <Path Filename="Sources">/</Path>
+                  <Path Filename="work">/Sources/</Path>
+                  <Path Filename="depot">/Sources/work/</Path>
+                  <Path Filename="..">/Sources/work/depot/</Path>
+                  <Path Filename="departments">/Sources/work/</Path>
+                  <Path Filename="..">/Sources/work/departments/</Path>
+                  <Path Filename="depot">/Sources/work/</Path>
+                  <Path Filename="dev">/Sources/work/depot/</Path>
+                  <Path Filename="gd-gfe">/Sources/work/depot/dev/</Path>
+                  <Path Filename="desktop">/Sources/work/depot/dev/gd-gfe/</Path>
+                  <Path Filename="ga_chromium_55_0_2883_98">/Sources/work/depot/dev/gd-gfe/desktop/</Path>
+                  <Path Filename="main">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/</Path>
+                  <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
+                  <Path Filename="build">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="benchmarks">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/v8/</Path>
+                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/v8/benchmarks/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="pixmaps.txt">/Volumes/Double Commander/Double Commander.app/Contents/MacOS/</Path>
+                  <Path Filename="..">/Volumes/</Path>
+                  <Path Filename="..">/Users/atishch/</Path>
+                  <Path Filename="Sources">/</Path>
+                  <Path Filename="work">/Sources/</Path>
+                  <Path Filename="depot">/Sources/work/</Path>
+                  <Path Filename="..">/Sources/work/depot/</Path>
+                  <Path Filename="departments">/Sources/work/</Path>
+                  <Path Filename="..">/Sources/work/departments/</Path>
+                  <Path Filename="depot">/Sources/work/</Path>
+                  <Path Filename="dev">/Sources/work/depot/</Path>
+                  <Path Filename="gd-gfe">/Sources/work/depot/dev/</Path>
+                  <Path Filename="desktop">/Sources/work/depot/dev/gd-gfe/</Path>
+                  <Path Filename="ga_chromium_55_0_2883_98">/Sources/work/depot/dev/gd-gfe/desktop/</Path>
+                  <Path Filename="main">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/</Path>
+                  <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
+                  <Path Filename="build">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/v8/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -342,16 +425,14 @@
         <ActiveTab>0</ActiveTab>
         <Tab>
           <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
-              </Sorting>
-            </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
+                  <Path Filename="pixmaps.txt">/Volumes/Double Commander/Double Commander.app/Contents/MacOS/</Path>
+                  <Path Filename="..">/Volumes/</Path>
+                  <Path Filename="..">/Users/atishch/</Path>
+                  <Path Filename="Sources">/</Path>
                   <Path Filename="work">/Sources/</Path>
                   <Path Filename="depot">/Sources/work/</Path>
                   <Path Filename="..">/Sources/work/depot/</Path>
@@ -364,44 +445,39 @@
                   <Path Filename="ga_chromium_55_0_2883_98">/Sources/work/depot/dev/gd-gfe/desktop/</Path>
                   <Path Filename="main">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/</Path>
                   <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
-                  <Path Filename="printing">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
-                  <Path Filename=".config">/Users/atishch/</Path>
-                  <Path Filename="git">/Users/atishch/.config/</Path>
-                  <Path Filename="..">/Users/atishch/.config/git/</Path>
-                  <Path Filename="mc">/Users/atishch/.config/</Path>
-                  <Path Filename="..">/Users/atishch/.config/mc/</Path>
-                  <Path Filename="..">/Users/atishch/.config/</Path>
-                  <Path Filename=".local">/Users/atishch/</Path>
-                  <Path Filename="share">/Users/atishch/.local/</Path>
-                  <Path Filename="..">/Users/atishch/.local/share/</Path>
-                  <Path Filename="..">/Users/atishch/.local/</Path>
-                  <Path Filename="Applications">/Users/atishch/</Path>
-                  <Path Filename="..">/Users/atishch/Applications/</Path>
-                  <Path Filename="Documents">/Users/atishch/</Path>
-                  <Path Filename="..">/Users/atishch/Documents/</Path>
-                  <Path Filename="Public">/Users/atishch/</Path>
-                  <Path Filename="..">/Users/atishch/Public/</Path>
-                  <Path Filename="Public">/Users/atishch/</Path>
-                  <Path Filename="..">/Users/atishch/Public/</Path>
-                  <Path Filename="Library">/Users/atishch/</Path>
-                  <Path Filename="Caches">/Users/atishch/Library/</Path>
-                  <Path Filename="Chromium">/Users/atishch/Library/Caches/</Path>
-                  <Path Filename="Default">/Users/atishch/Library/Caches/Chromium/</Path>
-                  <Path Filename="Cache">/Users/atishch/Library/Caches/Chromium/Default/</Path>
-                  <Path Filename="..">/Users/atishch/Library/Caches/Chromium/Default/Cache/</Path>
-                  <Path Filename="..">/Users/atishch/Library/Caches/Chromium/Default/</Path>
-                  <Path Filename="..">/Users/atishch/Library/Caches/Chromium/</Path>
-                  <Path Filename="$(CFBundleIdentifier)">/Users/atishch/Library/Caches/</Path>
-                  <Path Filename="..">/Users/atishch/Library/Caches/$(CFBundleIdentifier)/</Path>
-                  <Path Filename="com.apple.commerce">/Users/atishch/Library/Caches/</Path>
-                  <Path Filename="Library">/Users/atishch/Library/</Path>
-                  <Path Filename="Receipts">/Users/atishch/Library/Library/</Path>
-                  <Path Filename="..">/Users/atishch/Library/Library/Receipts/</Path>
-                  <Path Filename="..">/Users/atishch/Library/Library/</Path>
-                  <Path Filename=".localized">/Users/atishch/Library/</Path>
-                  <Path Filename="makechrome.sh">/Users/atishch/</Path>
-                  <Path Filename="..">/Users/</Path>
-                  <Path Filename="Users">/</Path>
+                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="Chromium Framework.framework">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/</Path>
+                  <Path Filename="Helpers">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/</Path>
+                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/Helpers/</Path>
+                  <Path Filename="Internet Plug-Ins">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/</Path>
+                  <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/Internet Plug-Ins/</Path>
+                  <Path Filename="Resources">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/</Path>
+                  <Path Filename="snapshot_blob.bin">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/Resources/</Path>
+                  <Path Filename="Resources">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Chromium Framework.framework/</Path>
+                  <Path Filename="app_mode_loader.app">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/</Path>
+                  <Path Filename="Debug">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/</Path>
+                  <Path Filename="out">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
+                  <Path Filename="build">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="toolchain">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/</Path>
+                  <Path Filename="mac">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/toolchain/</Path>
+                  <Path Filename="BUILD.gn">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/toolchain/mac/</Path>
+                  <Path Filename="mac">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/toolchain/</Path>
+                  <Path Filename="linux">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/build/</Path>
+                  <Path Filename="net">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="README.md">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/net/</Path>
+                  <Path Filename="Downloads">/Users/andrux/</Path>
+                  <Path Filename="..">/Users/andrux/Downloads/</Path>
+                  <Path Filename="Documents">/Users/andrux/</Path>
+                  <Path Filename="..">/Users/andrux/Documents/</Path>
+                  <Path Filename="Themes">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/</Path>
+                  <Path Filename="..">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/Themes/</Path>
+                  <Path Filename="Themes">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/</Path>
+                  <Path Filename="light">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/Themes/</Path>
+                  <Path Filename="..">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/Themes/light/</Path>
+                  <Path Filename="..">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/Themes/</Path>
+                  <Path Filename="Themes">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/</Path>
+                  <Path Filename=".DS_Store">/Users/andrux/Documents/Projects/DoubleCommanderColorScheme/Themes/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -419,12 +495,12 @@
   </Tabs>
   <MainWindow>
     <Position>
-      <Left>48</Left>
-      <Top>23</Top>
-      <Width>1217</Width>
-      <Height>634</Height>
+      <Left>257</Left>
+      <Top>43</Top>
+      <Width>1045</Width>
+      <Height>677</Height>
       <Maximized>False</Maximized>
-      <Splitter>50</Splitter>
+      <Splitter>50.8975712777191</Splitter>
     </Position>
   </MainWindow>
   <Language>
@@ -453,9 +529,9 @@
   </Tools>
   <Fonts>
     <Main>
-      <Name>default</Name>
-      <Size>12</Size>
-      <Style>1</Style>
+      <Name>Lucida Grande</Name>
+      <Size>14</Size>
+      <Style>0</Style>
       <Quality>0</Quality>
     </Main>
     <Editor>

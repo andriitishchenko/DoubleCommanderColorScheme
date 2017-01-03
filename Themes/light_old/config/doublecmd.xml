@@ -54,7 +54,7 @@
       <Filter>
         <Name>Specified Executables</Name>
         <FileMasks>*</FileMasks>
-        <Color>1644825</Color>
+        <Color>55758</Color>
         <Attributes>-rwxrwxr*x</Attributes>
       </Filter>
       <Filter>
@@ -201,7 +201,7 @@
   <Tabs>
     <OpenedTabs>
       <Left>
-        <ActiveTab>0</ActiveTab>
+        <ActiveTab>1</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <History>
@@ -224,7 +224,7 @@
                   <Path Filename="ga_chromium_55_0_2883_98">/Sources/work/depot/dev/gd-gfe/desktop/</Path>
                   <Path Filename="main">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/</Path>
                   <Path Filename="src">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/</Path>
-                  <Path Filename="headless">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
+                  <Path Filename="net">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -273,7 +273,7 @@
                   <Path Filename="mainicon">/Applications/Double Commander.app/Contents/MacOS/pixmaps/</Path>
                   <Path Filename="..">/Applications/Double Commander.app/Contents/MacOS/pixmaps/mainicon/</Path>
                   <Path Filename="..">/Applications/Double Commander.app/Contents/MacOS/pixmaps/</Path>
-                  <Path Filename="">/Applications/Double Commander.app/Contents/MacOS/</Path>
+                  <Path Filename="pixmaps">/Applications/Double Commander.app/Contents/MacOS/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -312,7 +312,6 @@
                   <Path Filename="..">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/Resources/</Path>
                   <Path Filename="MacOS">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/</Path>
                   <Path Filename="Blackberry Access">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/Blackberry Access.app/Contents/MacOS/</Path>
-                  <Path Filename="">/Sources/work/depot/dev/gd-gfe/desktop/ga_chromium_55_0_2883_98/main/src/out/Debug/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -328,7 +327,7 @@
                 <FileSource Type="FileSystem"/>
                 <Paths>
                   <Path Filename="pixmaps.txt">/Volumes/Double Commander/Double Commander.app/Contents/MacOS/</Path>
-                  <Path Filename="">/Volumes/</Path>
+                  <Path Filename="Macintosh HD">/Volumes/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -352,6 +351,8 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
+                  <Path Filename="..">/Users/atishch/</Path>
+                  <Path Filename="Sources">/</Path>
                   <Path Filename="work">/Sources/</Path>
                   <Path Filename="depot">/Sources/work/</Path>
                   <Path Filename="..">/Sources/work/depot/</Path>
@@ -400,8 +401,6 @@
                   <Path Filename="..">/Users/atishch/Library/Library/</Path>
                   <Path Filename=".localized">/Users/atishch/Library/</Path>
                   <Path Filename="makechrome.sh">/Users/atishch/</Path>
-                  <Path Filename="..">/Users/</Path>
-                  <Path Filename="Users">/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -419,10 +418,10 @@
   </Tabs>
   <MainWindow>
     <Position>
-      <Left>48</Left>
-      <Top>23</Top>
-      <Width>1217</Width>
-      <Height>634</Height>
+      <Left>187</Left>
+      <Top>1</Top>
+      <Width>1449</Width>
+      <Height>799</Height>
       <Maximized>False</Maximized>
       <Splitter>50</Splitter>
     </Position>
@@ -431,14 +430,14 @@
     <POFileName>doublecmd.en.po</POFileName>
   </Language>
   <Tools>
-    <Viewer Enabled="True">
-      <Path>/usr/local/bin/subl</Path>
+    <Viewer Enabled="False">
+      <Path/>
       <Parameters/>
       <RunInTerminal>False</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
     </Viewer>
-    <Editor Enabled="True">
-      <Path>/usr/local/bin/subl</Path>
+    <Editor Enabled="False">
+      <Path/>
       <Parameters/>
       <RunInTerminal>False</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
@@ -660,7 +659,7 @@
     <PaintColor>255</PaintColor>
     <BackgroundColor>0</BackgroundColor>
     <FontColor>16777215</FontColor>
-    <TextPosition>2385</TextPosition>
+    <TextPosition>18237</TextPosition>
   </Viewer>
   <Editor>
     <EditWaitTime>2000</EditWaitTime>
