@@ -30,7 +30,7 @@ confirm() {
 
 usage() { 
         echo "Nothing to do."
-        echo -e "Usage $0 [themename]
+        echo -e "Usage $0 [themename] to apply existing theme
         -             [-l  list]
         -             [-c  <name> create new theme] 
         -             [-f -c <name> replase existing theme]
@@ -90,7 +90,7 @@ createtheme() {
 }
 
 #while getopts ":s:p:l:r" o; do
-while getopts ":l:r:c:f" o; do
+while getopts ":lr:c:f" o; do
     case "${o}" in
         f)
             FORCEACTION=1
