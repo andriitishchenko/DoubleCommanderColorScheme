@@ -32,8 +32,8 @@ usage() {
         echo "Nothing to do."
         echo -e "Usage $0 [themename] to apply existing theme
         -             [-l  list]
-        -             [-c  <name> create new theme] 
-        -             [-f -c <name> replase existing theme]
+        -             [-c  <name> create new theme with active settings] 
+        -             [-f -c <name> replase existing theme with active settings]
         \n\n" 1>&2; exit 1;
 }
 
@@ -50,7 +50,9 @@ backup() {
 }
 
 restore() {
-    echo "Restore backup ..."
+    echo -e "Do you want to restore last used theme?"
+    confirm
+    echo "Restoring backup ..."
     tar -xvf "$DBLSETTINGS/backup.tar.gz"
     echo "... done"
 }
@@ -90,7 +92,7 @@ createtheme() {
 }
 
 #while getopts ":s:p:l:r" o; do
-while getopts ":lr:c:f" o; do
+while getopts ":lrc:f" o; do
     case "${o}" in
         f)
             FORCEACTION=1
